@@ -1,0 +1,54 @@
+.card{
+width: 250px;
+height: 300px;
+border: 1px solid #444;
+display: flex;
+align-items: center;
+flex-direction: column;
+margin: 8px;
+padding: 12px;
+}
+.nav {
+   width: 100%;
+   display: flex;
+   justify-content: end;
+}
+.wishlist-container {
+   width: 100%;
+   display: flex;
+   justify-content: end;
+}
+.wishlist {
+   display: flex;
+   align-items: center;
+   color: white;
+   font-size: 20px;
+   height: 32px;
+}
+.red {
+   color: red;
+  
+}
+.white {
+   color: white;
+   
+}
+.title {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   width: 200px;
+}
+
+.container {
+   display: flex;
+   flex-wrap: wrap;
+}
+ .cart {
+   background-color: yellow;
+   margin: 4px;
+ }
+ .buy {
+   background-color: red;
+   margin: 4px;
+ }
