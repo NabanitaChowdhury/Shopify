@@ -11,12 +11,12 @@ padding: 12px;
 .nav {
    width: 100%;
    display: flex;
-   justify-content: end;
+   justify-content: flex-end;
 }
 .wishlist-container {
    width: 100%;
    display: flex;
-   justify-content: end;
+   justify-content: flex-end;
 }
 .wishlist {
    display: flex;
