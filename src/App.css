@@ -1,3 +1,8 @@
+body {
+   display: block;
+   padding: 0;
+   margin: 0;
+}
 .card{
 width: 250px;
 height: 300px;
@@ -10,8 +15,30 @@ padding: 12px;
 }
 .nav {
    width: 100%;
+   padding: 8px;
+   position: sticky;
+   top: 0;
+   background-color: #57aeaa;
    display: flex;
-   justify-content: flex-end;
+   .app-title {
+      width: 50%;
+      color: #ffffff;
+      font-size: 24px;
+      padding-left: 24px;
+   }
+   .nav-items {
+      width: 50%;
+      padding-right: 24px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+   }
+   .cart-button{
+      margin-left: 4px;
+   }
+   .item-count {
+      color: #e64f09;
+   }
 }
 .wishlist-container {
    width: 100%;
@@ -41,6 +68,7 @@ padding: 12px;
 }
 
 .container {
+   padding: 24px;
    display: flex;
    flex-wrap: wrap;
 }

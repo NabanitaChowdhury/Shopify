@@ -51,41 +51,45 @@ export const App = () => {
     }, [])
     console.log(allProducts)
     return (
-        <div className="container">
+        <>
             <div className="nav">
-                {allCartProduct.length > 0 ? (<p>{allCartProduct.length} Item Added</p>) : null}
-                <button onClick={showCartProduct}>&#128722;</button>
+                <div className="app-title">ShopiFy</div>
+                <div className="nav-items">
+                    {allCartProduct.length > 0 ? (<div className="item-count">{allCartProduct.length} Item Added</div>) : null}
+                    <button className="cart-button" onClick={showCartProduct}>&#128722;</button>
+                </div>
             </div>
-            {
-                isCartOpen ? (<>cart product
-                    {allCartProduct.map((product) => {
-                        return (
-                            <Card
-                                product={product}
-                                wishlist={wishlist}
-                                checkingWishList={checkingWishList}
-                                addCart={addCart}
-                                buy={buy}
-                                isCart
-                            />
-                        )
-                    })}
-                </>) : (<>
-                    {allProducts.map((product, index) => {
-                        return (
-                            <Card
-                                product={product}
-                                wishlist={wishlist}
-                                checkingWishList={checkingWishList}
-                                addCart={addCart}
-                                buy={buy}
-                            />
-                        )
-                    })}
-                </>)
-            }
+            <div className="container">
+                {
+                    isCartOpen ? (<>cart product
+                        {allCartProduct.map((product) => {
+                            return (
+                                <Card
+                                    product={product}
+                                    wishlist={wishlist}
+                                    checkingWishList={checkingWishList}
+                                    addCart={addCart}
+                                    buy={buy}
+                                    isCart
+                                />
+                            )
+                        })}
+                    </>) : (<>
+                        {allProducts.map((product, index) => {
+                            return (
+                                <Card
+                                    product={product}
+                                    wishlist={wishlist}
+                                    checkingWishList={checkingWishList}
+                                    addCart={addCart}
+                                    buy={buy}
+                                />
+                            )
+                        })}
+                    </>)
+                }
 
-        </div>
-
+            </div>
+        </>
     )
 }
