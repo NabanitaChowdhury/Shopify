@@ -1,6 +1,6 @@
 {
   "homepage": "https://nabanitachowdhury.github.io/Shopify",
-  "name": "ecommerce",
+  "name": "shopify",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
